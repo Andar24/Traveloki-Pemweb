@@ -1,4 +1,8 @@
 // src/services/api.ts
+
+// Logika ini akan otomatis memilih URL:
+// - Kalau di localhost -> pakai http://localhost:5000/api
+// - Kalau di Vercel -> pakai URL yang kita setting di Environment Variable
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 export const api = {
